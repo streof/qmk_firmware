@@ -3,7 +3,10 @@
 #pragma once
 
 // default but used in macros
-#define TAPPING_TERM 200
+#define TAPPING_TERM 350
+
+// Recommended for higher TAPPING_TERM
+#define PERMISSIVE_HOLD
 
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
@@ -13,7 +16,7 @@
 
 // Auto Shift
 #define NO_AUTO_SHIFT_ALPHA
-#define AUTO_SHIFT_TIMEOUT TAPPING_TERM
+#define AUTO_SHIFT_TIMEOUT 200
 #define AUTO_SHIFT_NO_SETUP
 
 // Recommended for heavy chording.
