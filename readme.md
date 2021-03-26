@@ -9,6 +9,19 @@
 
 This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the [Clueboard product line](https://clueboard.co).
 
+## Personal setup
+
+You're currently viewing the `streof` branch which unifies:
+- the [`master` branch](https://github.com/qmk/qmk_firmware/tree/master) of the QMK firmware project
+- the [`development` branch](https://github.com/manna-harbour/qmk_firmware/blob/miryoku/users/manna-harbour_miryoku/miryoku.org) of the Miryoku layout
+- my personal settings (very minimal at this point of time)
+
+Flashing examples (should be run from the root of the repository and the keyboard needs to be in bootloader mode):
+- `make keyboardio/atreus:manna-harbour_miryoku:flash MIRYOKU_NAV=VI MIRYOKU_CLIPBOARD=MAC`
+- `make moonlander:manna-harbour_miryoku:flash MIRYOKU_NAV=VI MIRYOKU_CLIPBOARD=MAC`
+
+(Moonlander layout has also been [implemented](https://configure.ergodox-ez.com/moonlander/layouts/mlLZP/latest/0) in Oryx)
+
 ## Documentation
 
 * [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
